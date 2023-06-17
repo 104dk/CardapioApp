@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Image.asset(
-                    'assets/prato_com_pao_e_ovo.png',
+                    'assets/images/prato_com_pao_e_ovo.png',
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Image.asset(
-                    'assets/prato_com_pao_e_nozes.png',
+                    'assets/images/prato_com_pao_e_nozes.png',
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Image.asset(
-                    'assets/prato_com_pao_e_ovo_torradas.png',
+                    'assets/images/prato_com_pao_e_ovo_torradas.png',
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Image.asset(
-                    'assets/prato_com_urso.png',
+                    'assets/images/prato_com_ursos.png',
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,
@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Image.asset(
-                    'assets/prato_com_leao.png',
+                    'assets/images/prato_com_leao.png',
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,
@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: <Widget>[
                   Image.asset(
-                    'assets/prato_com_coelho.png',
+                    'assets/images/prato_com_coelho.png',
                     width: 150,
                     height: 150,
                     fit: BoxFit.cover,
