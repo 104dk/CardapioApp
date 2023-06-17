@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/background.jpg'),
+                image: AssetImage('assets/images/cardapio_background.jpg'),
                 fit: BoxFit.cover)),
         child: Center(
           child: Column(
@@ -56,23 +56,21 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {},
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()),
-                    );
-                  },
-                  child: Text('Login'),
-                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomeScreen()),
+                  );
+                },
+                child: const Text('Login'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => CadastroScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => const CadastroScreen()),
                   );
                 },
                 child: const Text(
@@ -80,6 +78,7 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                     fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
                   ),
                 ),
               ),

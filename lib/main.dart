@@ -1,5 +1,3 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 import 'pages/HomeScreen.dart';
@@ -12,10 +10,12 @@ class CustomIcons {
 }
 
 void main() {
-  runApp(CardapioApp());
+  runApp(const CardapioApp());
 }
 
 class CardapioApp extends StatelessWidget {
+  const CardapioApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +30,7 @@ class CardapioApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => LoginScreen(),
-        '/home': (context) => HomeScreen(),
+        '/home': (context) => const HomeScreen(),
         '/menu': (context) => MenuScreen(),
       },
     );
