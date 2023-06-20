@@ -26,7 +26,7 @@ class LoginScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(20),
                 decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 110, 87, 87),
+                  color: Color.fromARGB(255, 224, 26, 26),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(CustomIcons.delivery_dining, size: 50),
