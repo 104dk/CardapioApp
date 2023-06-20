@@ -30,43 +30,6 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
-              ),
-              child: Text(
-                'Menu',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
-            ),
-            ListTile(
-              title: const Text('Início'),
-              onTap: () {
-                // Lógica para a opção Início
-              },
-            ),
-            ListTile(
-              title: const Text('Carrinho'),
-              onTap: () {
-                // Lógica para a opção Carrinho
-              },
-            ),
-            ListTile(
-              title: const Text('Sair'),
-              onTap: () {
-                Navigator.pushReplacementNamed(context, '/login');
-              },
-            ),
-          ],
-        ),
-      ),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -99,12 +62,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const Text(
-                    'Descrição:',
+                    'Descrição: Deliciosas torradas com ovo e geleia de pinemta.',
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 10),
+                  const Text(
+                    'R\$ 23',
+                    style: TextStyle(
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Colors.red, // Define a cor vermelha para o texto
+                    ),
+                  ),
                   ElevatedButton(
                     onPressed: () {
                       // Lógica do botão
@@ -135,20 +106,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const Text(
-                    'Descrição:',
+                    'Descrição: Deliciosas fatias de pão com geleia, nozes, morangos, fatias de laranja, cereja, tomate cereja acompanhado de ovos cozido. ',
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 10),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Lógica do botão
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFFF9999),
+                  const Text(
+                    'R\$ 34',
+                    style: TextStyle(
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Colors.red, // Define a cor vermelha para o texto
                     ),
-                    child: const Text('Botão'),
                   ),
                 ],
               ),
@@ -171,20 +141,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const Text(
-                    'Descrição:',
+                    'Descrição: Delicioso Trio pão com ovos e café.',
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 10),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Lógica do botão
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFFF9999),
+                  const Text(
+                    'R\$ 29',
+                    style: TextStyle(
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Colors.red, // Define a cor vermelha para o texto
                     ),
-                    child: const Text('Botão'),
                   ),
                 ],
               ),
@@ -207,20 +176,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const Text(
-                    'Descrição:',
+                    'Descrição: Pão de leite com doçe de leite, banana e uvas.',
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 10),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Lógica do botão
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFFF9999),
+                  const Text(
+                    'R\$ 15',
+                    style: TextStyle(
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Colors.red, // Define a cor vermelha para o texto
                     ),
-                    child: const Text('Botão'),
                   ),
                 ],
               ),
@@ -243,20 +211,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const Text(
-                    'Descrição:',
+                    'Descrição: Bife com Arroz, cenoura, uva passas e abacaxi.',
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 10),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Lógica do botão
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFFF9999),
+                  const Text(
+                    'R\$ 28',
+                    style: TextStyle(
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Colors.red, // Define a cor vermelha para o texto
                     ),
-                    child: const Text('Botão'),
                   ),
                 ],
               ),
@@ -279,25 +246,30 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const Text(
-                    'Descrição:',
+                    'Descrição: Macarrão com brocolis, cenoura, palmito, azeitonas roxa e feijão.',
                     style: TextStyle(
                       fontStyle: FontStyle.italic,
                     ),
                   ),
                   const SizedBox(height: 10),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Lógica do botão
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFFF9999),
+                  const Text(
+                    'R\$ 28',
+                    style: TextStyle(
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Colors.red, // Define a cor vermelha para o texto
                     ),
-                    child: const Text('Botão'),
                   ),
+                  const SizedBox(height: 40),
                   GestureDetector(
                     onTap: _scrollToTop,
                     child: const Text(
-                      'Voltar para o Início',
+                      ' Clique aqui e Volte para o Início ',
+                      style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                      ),
                     ),
                   ),
                 ],
