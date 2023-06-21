@@ -1,16 +1,13 @@
 # cardapioapp
 
-A new Flutter project.
+VAIII - Desenvolvimento mobile
+Projeto em Flutter/Dart de um cardápio com itens para que os clientes escolherem
+Alunos: Carlos Daniel Farias Nobre
+        Lucas Ferreira Almeida
+        Maianderson Ferreira da Silva   
 
-## Getting Started
+## Rodando
 
-This project is a starting point for a Flutter application.
+Após clonar o repositório, rode o seguinte comando no terminal: 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+flutter run

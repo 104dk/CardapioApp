@@ -4,6 +4,7 @@ import 'pages/HomeScreen.dart';
 import 'pages/LoginScreen.dart';
 import 'pages/MenuScreen.dart';
 
+
 class CustomIcons {
   static const IconData delivery_dining =
       IconData(0xe1bd, fontFamily: 'MaterialIcons');
